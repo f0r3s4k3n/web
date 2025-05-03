@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RRM - Resource Redistribution Machine</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+  <div class="sparkles">
+    <div class="sparkle" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="sparkle" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="sparkle" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="sparkle" style="left: 70%; animation-delay: 6s;"></div>
+    <div class="sparkle" style="left: 90%; animation-delay: 8s;"></div>
+  </div>
+  <button id="darkModeToggle" class="btn">🌙 Toggle Dark Mode</button>
+  <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Load saved mode
+    if (localStorage.getItem('mode') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleButton.textContent = '☀️ Light Mode';
+    }
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      const isDark = body.classList.contains('dark-mode');
+      toggleButton.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+      localStorage.setItem('mode', isDark ? 'dark' : 'light');
+    });
+  </script>
+
+  
+<body>
+  <header class="hero">
+    <h1 class="glow"> Resource Redistribution Machine </h1>
+    <p class="subtitle">Fixing capitalism, one glowing box at a time :D</p>
+    </footer>
+    <p class="bop">"Redistribution is the first step to redemtion." -Unknown Donater</p>
+    <a href="#about" class="btn">Learn More ↓</a>
+  </header>
+
+  <section id="about" class="section">
+    <div class="card glass">
+      <h2>💥 Why RRM?</h2>
+      <p>40% of food globally gets wasted, and corporations love fake scarcity. The RRM flips the script—empowering people and saving the planet while we’re at it :3</p>
+    </div>
+
+    <div class="card glass">
+      <h2>⚙️ How It Works</h2>
+      <ul>
+        <li>📦 Donors drop off excess items</li>
+        <li>🧠 AI scans & sorts goods</li>
+        <li>📡 Items get sent to places that need them</li>
+        <li>📬 Delivered via drones, trucks, or community runners</li>
+      </ul>
+    </div>
+
+    <div class="card glass">
+      <h2>💙 Why It's Awesome</h2>
+      <ul>
+        <li>💡 Stops waste & overproduction</li>
+        <li>👩‍👩‍👧‍👦 Builds community sharing</li>
+        <li>🌱 Good for the environment</li>
+        <li>🔥 Tells capitalism to go cry in a corner</li>
+        <li>🎢 Donaters get benfits too!</li>
+      </ul>
+    </div>
+
+    <div class="blueprint-section">
+      <h2>🛠️ RRM Blueprint</h2>
+      <img src="rrm.png" alt="blueprint sketch of the RRM" class="blueprint-img">
+    </div>
+  <section
+    <h2 class="neon-subtitle shimmer-text glow-trail"> Real Stories. Real Impact.</h2> </section>
+   
+
+    <div class="story">
+      <h4>📦 "The Books That Changed A Life"</h4>
+      <p><em>“I donated a box of old textbooks I had lying around from college. A few weeks later, I got a message saying a community learning center in a rural town had used them to start a free tutoring program. I literally cried.”</em> — Jordan, Donor</p>
+    </div>
+
+    <div class="story">
+      <h4>🧥 "A Coat and a Conversation"</h4>
+      <p><em>“I found a brand-new coat in the RRM near my neighborhood after losing mine in a storm. It was just my size. There was even a note in the pocket: ‘Stay warm.’ I’ve never forgotten that kindness.”</em> — Samira, Recipient</p>
+    </div>
+
+    <div class="story">
+      <h4>👟 "Shoes That Ran Across the Country"</h4>
+      <p><em>“A pair of sneakers I outgrew were scanned into the RRM. Months later, I saw them in a photo online—on the feet of a marathon runner raising funds for cancer research. What the actual heck. 😭”</em> — Milo, Donor</p>
+    </div>
+
+    <div class="story">
+      <h4>🎮 "Game Night Revival"</h4>
+      <p><em>“I dropped off some old board games I hadn’t touched since middle school. A youth center picked them up and now uses them for weekly community nights. Apparently ‘Uno Night’ is a whole thing now. You're welcome.”</em> — Lex, Donor</p>
+    </div>
+
+    <div class="story">
+      <h4>🍲 "Grandma’s Soup Pot"</h4>
+      <p><em>“We were evacuated after a flood. Supplies were tight. I found this huge cooking pot in an RRM nearby. My abuela used it to cook for all the families in the shelter. That pot fed 60 people. No joke.”</em> — Diego, Recipient</p>
+    </div>
+  </section>
+
+
+  <div id="chatbot" class="glass-card chatbot-box">
+    <div class="chatbot-header shimmer-text glow-trail">💬 Chat with Riley</div>
+    <div id="chat-log" class="chat-log"></div>
+    <input id="chat-input" type="text" placeholder="Ask me anything!" class="chat-input">
+  </div>
+
+
+  <footer>
+    <p>Made with love & spite for billionaires 💖</p>
+  </footer>
+  <script>
+    const toggleButton = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      toggleButton.textContent = body.classList.contains('dark-mode') 
+        ? '☀️ Light Mode' 
+        : '🌙 Dark Mode';
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<audio autoplay loop controls style="display: none;" id="bg-music">
+  <source src="Cooking-Long-Version(chosic.com).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<head>
+  <meta charset="UTF-8">
+  <title>RRM Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
