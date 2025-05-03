@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at top, #000000, #1f018e);
+  color: #000000;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(120deg, #fbf5ef, #000000);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: floatIn 2s ease-out forwards;
+}
+
+.glow {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  text-shadow: 0 0 15px rgb(95, 92, 255), 0 0 30px #000000;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: #000000;
+}
+
+.bop {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #000000;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(45deg, #0a28a4, #2a1ded);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgb(39, 63, 180, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgb(39, 63, 180, 0.5);
+}
+
+.section {
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 20px;
+  background: rgb(79, 79, 79, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgb(39, 63, 180, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgb(39, 63, 180, 0.5);
+  font-size: 1rem;
+  color: #f7f7f7;
+}
+
+@keyframes floatIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.chatbot-box {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 300px;
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #fff3;
+  backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px #ff0088a0;
+  z-index: 1000;
+}
+
+.chatbot-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-bottom: 1px solid #00000033;
+}
+
+.chat-log {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  font-family: monospace;
+}
+
+.chat-input {
+  border: none;
+  border-top: 1px solid #fff3;
+  padding: 0.8rem;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+  background: transparent;
+  color: black;
+}
+
+body {
+  background: linear-gradient(to right, #ededed, #162447);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+Fancy Card Container .glass-card {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgb(120, 118, 234, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgb(188, 193, 210, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Fancy Card Container */
+.glass-card {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgb(188, 193, 210, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgb(22, 33, 80, 0.37);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(29, 28, 130, 0.18);
+  animation: fadeIn 1.5s ease-in;
+}
+
+/* Header / Title */
+.neon-subtitle {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0 0 10px #000000, 0 0 20px #0d0d0d;
+  margin-bottom: 2rem;
+}
+
+/* Each Story Bubble */
+.story {
+  background: rgb(69, 69, 69, 0.08);
+  border-left: 5px solid rgb(31, 38, 135);
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgb(29, 28, 130, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgb(39, 63, 180, 0.5);
+}
+
+/* Story Title Glow */
+.glow-text {
+  color: rgb(0, 0, 0, 0.05);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px rgb(22, 84, 227, 0.5);
+}
+
+/* Italics for Quotes */
+em {
+  color: #000000;
+  font-style: italic;
+}
+
+/* Soft Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.blueprint-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.blueprint-img {
+  max-width: 90%;
+  height: 80%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.05);
+}
+
+
+body.dark-mode {
+  background: radial-gradient(circle at top, #0a0a0a, #111133);
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn {
+  background: linear-gradient(45deg, #444, #888);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .btn:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .subtitle,
+body.dark-mode .bop {
+  color: #ddd;
+}
+
+body.dark-mode .story {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+neon-subtitle.dark-mode .shimmer-text {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
